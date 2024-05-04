@@ -42,14 +42,13 @@ body {
 
 /* LOGO */
 .logo {
-  text-decoration: none;
   font-family: var(--font-family-logo);
   font-weight: 700;
   font-size: 26px;
 }
 
 .header-studio {
-  color: #000;
+  color: var(--text-color-black);
 }
 
 .web {
@@ -75,31 +74,20 @@ a {
   color: inherit;
 }
 
-.link:hover {
-  color: var(--text-color-accent);
-}
-
+.link:hover,
 .link:focus {
   color: var(--text-color-accent);
 }
 
-.link-contacts {
-  color: inherit;
+.address {
   font-style: normal;
-}
-
-.link-contacts:hover {
-  color: var(--text-color-accent);
-}
-
-.link-contacts:focus {
-  color: var(--text-color-accent);
 }
 
 /* HERO */
 .hero {
   background-color: var(--background-color-secondary);
   letter-spacing: 0.06;
+  text-align: center;
 }
 
 .hero-title {
@@ -165,10 +153,9 @@ a {
 .footer {
   background-color: var(--background-color-secondary);
 }
-.address {
+.our-address {
   color: var(--text-color-white);
   line-height: 1.77;
-  font-style: normal;
 }
 
 .footer-contacts {
@@ -185,15 +172,11 @@ a {
   color: var(--text-color-secondary);
   background-color: var(--background-color-gray);
   cursor: pointer;
-  border-style: none;
+  border: 1px solid transparent;
   letter-spacing: 00.03em;
 }
 
-.filter:focus {
-  color: var(--text-color-white);
-  background-color: var(--background-color-accent);
-}
-
+.filter:focus,
 .filter:hover {
   color: var(--text-color-white);
   background-color: var(--background-color-accent);
